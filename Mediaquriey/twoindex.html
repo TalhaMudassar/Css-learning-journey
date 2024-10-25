@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+    border: 10px solid black;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    height: 250px;
+}
+
+.boxleft{
+background-color: aquamarine;
+border: 2px solid blue;
+width: 50%;
+}
+
+.boxright{
+    background-color: yellow;
+border: 2px solid brown;
+width: 50%;
+}
+p{
+    border: 1px solid red;
+}
+#imageinserted{
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 640px) {
+    .container{
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="boxleft">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div class="boxright">
+            <img src="1725625699609-Cheezious New Web Banner 03.webp"  id="imageinserted" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

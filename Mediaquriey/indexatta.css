@@ -1,0 +1,13 @@
+.box{
+    background-color: gold;
+    border: 3px solid blue;
+    height: 400px;
+    width: 400px;
+ }
+
+ @media (min-width:500px) {
+    .box{
+        background-color: green;
+    }
+    
+ }

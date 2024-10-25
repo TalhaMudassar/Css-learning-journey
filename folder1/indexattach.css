@@ -1,0 +1,19 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.box{
+    border: 10px solid pink;
+    overflow: auto;
+}
+.item{
+    float: left;
+
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+    border: 5px solid green;
+    
+}
+
+

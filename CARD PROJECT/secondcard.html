@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secondcard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightskyblue;
+        }
+        .card{
+            width: 250px;
+            height: 400px;
+            border-radius: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .card img{
+            width: 250px;
+            height: 40%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            display: block; /* Ensures no inline space is added */
+            margin-bottom: 10px;
+        }
+        .textBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            width: 90%;
+            text-align: center;
+            font-size: 0.9rem;
+            padding-bottom: 10px;
+         /*    margin-top: 0; Ensures no extra margin 
+            padding-top: 0;  Removes padding in case there's any */
+        }
+        #amountbox{
+            width: 90%;
+            height: 10%;
+            background-color: rgb(19, 74, 74);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 13px;
+            box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        
+        }
+        .leftbox{
+            height: 100%;
+            gap: 3%;
+            display: flex;
+            align-items: center;
+            
+
+        }
+        .rightbox p,a{
+            color: white;
+
+        }
+        .musicimage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 4rem;
+            height: 7rem;
+            padding-top: 5%;
+            padding-left: 0%;
+    
+        }
+        #patment{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            height: 9%;
+            border-radius: 10px;
+            margin-bottom: 1%;
+            background-color: rgb(241, 241, 133);
+ 
+        }
+        .cancelBox a{
+            text-decoration: none;
+            color: rgb(41, 6, 6);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <img src="images/icon.jpg" alt="">
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Thank you for your purchase! Your order is being processed and will be shipped soon. You can track the status of your order and view more details in your account dashboard.</p>
+ </div>
+            <div id="amountbox">
+
+
+                <div class="leftbox">
+                    <div class="musicimage">
+                        <img src="images/music.png" alt="">
+                    </div>
+
+                    <div class="rightbox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+
+                </div>
+
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+
+
+
+            </div>
+
+
+
+            <button id="patment">
+                Processed to payment
+            </button>
+
+
+
+
+            <div class="cancelBox">
+                <a href="#"> Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

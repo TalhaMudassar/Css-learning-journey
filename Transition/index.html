@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+    /*        transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;*/
+            transition: width 2s, height 2s;
+        }
+
+        .box:hover {
+            width: 1000px;
+            height: 800px;
+            background-color: orange;
+        }
+
+        .box.clicked {
+            height: 900px; /* Height changes instantly */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+
+    <script>
+        const box = document.getElementById("box");
+
+        box.addEventListener("click", function() {
+            // Toggle the "clicked" class to instantly change the height
+            box.classList.toggle("clicked");
+        });
+    </script>
+</body>
+</html>

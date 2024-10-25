@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            border: 0.3rem solid black;
+            display: grid;
+            grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(4,1fr);
+        }
+        .item{
+            background-color: yellow;
+            border: 0.1rem solid black;
+            margin: 3px;
+        }
+        .a{
+            
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .h{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .m{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item a">a</div>
+        <div class="item b">b</div>
+        <div class="item c">c</div>
+        <div class="item d">d</div>
+        <div class="item e">e</div>
+        <div class="item f">f</div>
+        <div class="item g">g</div>
+        <div class="item h">h</div>
+        <div class="item i">i</div>
+        <div class="item j">j</div>
+        <div class="item k">k</div>
+        <div class="item l">l</div>
+        <div class="item m">m</div>
+        <div class="item n">n</div>
+    </div>
+    
+</body>
+</html>
